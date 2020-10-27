@@ -28,7 +28,7 @@ Make sure [gcc](https://gcc.gnu.org/install/) is installed.
 ## Profile
 
 ### Perform Testing
-Once the program is compiled via `make`, it's time for performance measurement. Run `bash run_test.sh <Number of Requests> <Site1's URL> <Site2's URL>` to perform comparison between two sites. `<Number of Requests>`, `<Site1's URL>` and `<Site2's URL>` are optional. Run `bash run_test.sh` to profile [`assignment.jiachengzhang.worker site`](http://assignment.jiachengzhang.workers.dev) and [`static-links-page site`](http://static-links-page.signalnerve.workers.dev) (**Sites Comparison 1** with only 100 requests).
+Once the program is compiled via `make`, it's time for performance measurement. Run `bash run_test.sh <Number of Requests> <Site1's URL> <Site2's URL>` to perform comparison between two sites. `<Number of Requests>`, `<Site1's URL>` and `<Site2's URL>` are optional. Run `bash run_test.sh` to profile [`assignment.jiachengzhang.worker site`](http://assignment.jiachengzhang.workers.dev) and [`static-links-page site`](http://static-links-page.signalnerve.workers.dev) (**Sites Comparison 1** with only 100 requests). Results can be found in `profile.txt`.
 
 ### Sites Comparison 1
 ##### Result

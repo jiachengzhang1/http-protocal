@@ -13,12 +13,12 @@ void printHelp()
 	char *helpCmd = "call --help";
 	char *profileCmd = "call --profile < Num of Requests > < Full URL >";
 
-	char *urlMsg = "make a http request to the url (\"http://\" prefix is required), for example, http://www.google.com,\n      then print the response.";
+	char *urlMsg = "make a http request to the url (\"http://\" prefix is required), for example, http://assignment.jiachengzhang.workers.dev/links,\n      then print the response.";
 	char *helpMsg = "print out the usage.";
 	char *profileMsg = "send number of requests to the General Assignment sit by default, then print out the performance,\n      use the optional < Full URL > field to customize URL (\"http://\" prefix is required).";
 
 	printf("usage:\n");
-	printf("  Note: It supports \"http\" requests only. \"https\" may result \"301, Moved Pernimally.\"\n\n");
+	printf("  Note: It supports \"http\" requests only.\n\n");
 	printf("%s%s\n%s%s\n\n", FOUR_SPACES, urlCmd, SIX_SPACES, urlMsg);
 	printf("%s%s\n%s%s\n\n", FOUR_SPACES, helpCmd, SIX_SPACES, helpMsg);
 	printf("%s%s\n%s%s\n\n", FOUR_SPACES, profileCmd, SIX_SPACES, profileMsg);
