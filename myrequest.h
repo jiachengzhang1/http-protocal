@@ -1,0 +1,1 @@
+int request(char *addr, int *time, int *size, int print);
