@@ -1,9 +1,10 @@
 # Systems Engineering Assignment
 Author: **Jiacheng Zhang** </br >
 Email:  **jiachengzhang1@email.arizona.edu**
-## Build
 
-1. Unzip the project `unzip path/to/http_get.zip`.
+## Build
+Make sure [gcc](https://gcc.gnu.org/install/) is installed.
+1. Unzip the project `unzip path/to/http_get.zip -d http_get`.
 2. Change into the project directory `cd path/to/http_get/`.
 3. Use `make` command to compile the code. Run `make` or `make all`. Make sure `Makefile` is in the directory.
 4. Executable `http_get` should be generated along with object files.
@@ -14,6 +15,7 @@ Email:  **jiachengzhang1@email.arizona.edu**
 1. `./http_get --url <Full URL>` Make HTTP request to URL and print the response to the console
 
 - `<Full URL>` Required. Define the URL to make requests. Prefix `http://` is required.
+- For example, `./http_get --url http://assignment.jiachengzhang.workers.dev/links`
 
 2. `./http_get --help` Print help page.
 
@@ -21,11 +23,12 @@ Email:  **jiachengzhang1@email.arizona.edu**
 
 - `<Number of Request>` Required. Make the given number of requests to the server.
 - `<Full URL>` Optional. Define the URL to make requests. Prefix `http://` is required. It is set as website built from "General Assignment" (http://assignment.jiachengzhang.workers.dev) if there's not a provided URL.
+- For example, `./http_get --profile 10` makes 10 requests to `http://assignment.jiachengzhang.workers.dev` by default, then prints out the performance. `./http_get --profile 10 http://static-links-page.signalnerve.workers.dev` makes 10 requests to `http://static-links-page.signalnerve.workers.dev`, then prints out the performance.
 
 ## Profile
 
 ### Perform Testing
-Once the program is compiled via `make`, it's time for performance measurement. Run `bash run_test.sh <Number of Requests> <Site1's URL> <Site2's URL>` to perform comparison between two sites. `<Number of Requests>`, `<Site1's URL>` and `<Site2's URL>` are optional. Run `bash run_test.sh` to profile [`assignment.jiachengzhang.worker site`](http://assignment.jiachengzhang.workers.dev) and [`static-links-page site`](http://static-links-page.signalnerve.workers.dev) (**Sites Comparison 1**).
+Once the program is compiled via `make`, it's time for performance measurement. Run `bash run_test.sh <Number of Requests> <Site1's URL> <Site2's URL>` to perform comparison between two sites. `<Number of Requests>`, `<Site1's URL>` and `<Site2's URL>` are optional. Run `bash run_test.sh` to profile [`assignment.jiachengzhang.worker site`](http://assignment.jiachengzhang.workers.dev) and [`static-links-page site`](http://static-links-page.signalnerve.workers.dev) (**Sites Comparison 1** with only 100 requests).
 
 ### Sites Comparison 1
 ##### Result
