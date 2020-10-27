@@ -8,7 +8,7 @@ if [ ! -z "$1" ] && [ ! -z "$2" ] && [ ! -z "$3" ]; then
     site2=$3
 else
     echo "Perform default testing."
-    req_num=1000
+    req_num=100
     site1=http://assignment.jiachengzhang.workers.dev
     site2=http://static-links-page.signalnerve.workers.dev
 fi
