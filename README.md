@@ -1,6 +1,4 @@
-# Systems Engineering Assignment
-Author: **Jiacheng Zhang** </br >
-Email:  **jiachengzhang1@email.arizona.edu**
+# HTTP in C
 
 ## Build
 Make sure [gcc](https://gcc.gnu.org/install/) is installed.
